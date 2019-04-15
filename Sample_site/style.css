@@ -1,0 +1,334 @@
+﻿body {
+	margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+	background-image: url(images/body_border.gif);
+	background-repeat: repeat-x;
+}
+
+p {
+    font-size: 12px;
+    line-height: 150%;
+}
+
+#container {
+    width: 900px;
+    height: 600px;
+    margin: 0px auto 0px auto;
+    float: none;
+}
+
+header {
+	height: 120px;
+	width: 900px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+header #Logo_area {
+	float: left;
+	height: 100px;
+	width: 300px;
+}
+
+header #Logo_area h1 {
+    margin-top: 40px;
+}
+
+header #Navi_area {
+	float: right;
+	height: 100px;
+	width: 580px;
+    
+}
+
+header #Navi_area #Banner {
+    float: right;
+    margin-right: 30px;
+}
+
+header #Navi_area ul {
+    list-style-type: none;
+    font-size: 10px;
+    margin-top: 100px;
+}
+
+header #Navi_area li {
+    display: inline;
+    float: right;
+    width: 70px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #050505;
+    padding-left: 8px;
+}
+
+header #Navi_area li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header #Navi_area li a:hover {
+    color: #09F;
+    text-decoration: underline; 
+}
+
+main {
+    height: auto;
+    width: 900px;
+}
+
+main #Side_navi {
+    height: 300px;
+    width: 210px;
+    float: left;
+    margin-top: 30px;
+}
+
+#Side_navi ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #000;
+}
+
+#Side_navi ul #navi01 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Top_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+
+#Side_navi ul #navi02 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Guide_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+#Side_navi ul #navi03 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Owners_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+#Side_navi ul #navi04 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Modelhouse_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+#Side_navi ul #navi05 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Blog_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+#Side_navi ul #navi06 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Event_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+#Side_navi ul #navi07 {
+    margin: 0px;
+    padding: 0px;
+    width: 210px;
+    height: 46px;
+    background: url("images/SideNavi_Request_over.gif") no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+
+#Side_navi ul a:hover img {
+    visibility: hidden;
+}
+
+
+#Side_navi ul h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+main #Main_box {
+    height: auto;
+    width: 450px;
+    float: left;
+    margin: 30px 0px 0px 20px;
+}
+
+#Main_box .MainBox_item {
+    width: 450px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#Main_box .MainBox_item .MainTitle {
+    background-image: url("images/MainTitle.gif");
+    width: 450px;
+    height: 25px;
+    margin-top: 0px;
+    margin-bottom: 7px;  
+}
+
+#Main_box .MainBox_item .MainTitle h2 {
+    font-size : 12px;
+    color: 4A4A4A;
+    margin: 0 0 0 10px;
+    padding: 5px;
+}
+
+#Main_box .MainBox_item .MainBox_right {
+    font-size: 11px;
+    float: right;
+    width: 250px;
+}
+
+#Main_box .MainBox_item img {
+    float: left;
+}
+
+#Main_Box .MainBox_item a {
+	color: #F63;
+}
+
+#Main_box .MainBox_item .MainBox_news {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: #747474;
+    border-bottom-style: solid;
+}
+
+#MainBox_sub .MainBox_item {
+    width: 650px;
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-color: #333;
+    border-bottom-style: solid;
+}
+
+#MainBox_sub .MainBox_item .Item_title {
+    height: 30px;
+    width: 645px;
+    margin-bottom: 20px;
+    border-top-width: 20px;
+    border-top-color: #CCC;
+    border-top-style: solid;
+    border-left-width: 5px;
+    border-left-color: #CCC;
+    border-left-style: solid;
+}
+
+#MainBox_sub .MainBox_item .Item_title h3 {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #306;
+    padding-left: 10px;
+}
+
+#MainBox_sub .MainBox_item .Item_text {
+    width: 270px;
+    float: right;
+    margin-right: 5px;
+}
+
+main #Banner_box {
+    height: 300px;
+    width: 200px;
+    float: right;
+    margin-top: 30px;
+}
+
+main #Banner_box .BannerImg_right {
+    width: 92px;
+    float: right;
+}
+
+
+footer {
+	clear: both;
+    height: 20px;
+    width: 900px;
+    background-color: #000;
+    font-size: 10px;
+    text-align: center;
+    color: #FFF;
+    line-height: 17px;
+    margin: 0 auto 0 auto;
+}
+
+main #MainBox_sub {
+    width: 650px;
+    height: auto;
+    float: left;
+    margin: 30px 0px 20px 40px;
+}
+
+main #MainBox_sub .SubPage_title {
+    width: 650px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(images/SubPage_title.gif);
+}
+
+main #MainBox_sub .SubPage_title h2 {
+    font-size: 12px;
+    color: #474747;
+    padding: 7px 0 0 40px;
+}
+
+main #MainBox_sub .Corporate_title {
+    width: 643px;
+    height: 20px;
+    margin-bottom: 20px;
+    border-left-width: 7px;
+    border-left-style: solid;
+    border-left-color: #8A8A8A;
+}
+
+main #MainBox_sub .Corporate_title h3 {
+    font-size: 12px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+table {
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+td {
+    height: 25px;
+    padding: 2px 0 2px 10px;
+}
