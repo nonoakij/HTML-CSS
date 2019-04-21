@@ -1,0 +1,201 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <title>石川楓花</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="contact_form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div id="Logo_area">
+        <h1><a href="#"><img src="..\Sample_site\images\Logo.gif" alt="美浜設計株式会社"></a></h1>
+      </div>
+      <div id="Navi_area">
+        <div id="bannar">
+          <a href= "contact.html"><img src="..\Sample_site\images\Contact.gif" alt="お問い合わせ"></a>
+        </div>
+        <ul>
+          <li><a href="contact.html">資料請求</a></li>
+          <li><a href="#">サイトマップ</a></li>
+          <li><a href="#">リクルート</a></li>
+          <li><a href="index.html">トップ</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="Side_navi">
+        <ul>
+          <li id="navi01">
+            <h2><a href="index.html"><img src="..\Sample_site\images\SideNavi_Top_out.gif" alt="トップ"></a></h2>
+          </li>
+          <li id="navi02">
+            <h2><a href="corporate.html"><img src="..\Sample_site\images\SideNavi_Guide_out.gif" alt="会社概要"></a></h2>
+          </li>
+          <li id="navi03">
+            <h2><a href="#"><img src="..\Sample_site\images\SideNavi_Owners_out.gif" alt="実例集"></a></h2>
+          </li>
+          <li id="navi04">
+            <h2><a href="modelhouse.html"><img src="..\Sample_site\images\SideNavi_ModelHouse_out.gif" alt="モデルハウス"></a></h2>
+          </li>
+          <li id="navi05">
+            <h2><a href="#"><img src="..\Sample_site\images\SideNavi_Blog_out.gif" alt="匠のブログ"></a></h2>
+          </li>
+          <li id="navi06">
+            <h2><a href="#"><img src="..\Sample_site\images\SideNavi_Event_out.gif" alt="見学会"></a></h2>
+          </li>
+          <li id="navi07">
+            <h2><a href="contact.html"><img src="..\Sample_site\images\SideNavi_Request_over.gif" alt="資料請求"></a></h2>
+          </li>
+        </ul>
+      </div>
+      <div id="MainBox_sub">
+        <img src="..\Sample_site\images\ContactImage.jpg" alt="お問い合わせイメージ">
+        <div class="SubPage_title">
+          <h2>
+            お問い合わせ
+          </h2>
+        </div>
+        <form action="contact01.cgi" method="post" enctype="text/plain" id="contact01">
+          <p>
+            <label>
+              <span>
+                お名前
+              </span>
+              <input type="text" name="name" value="" size="50" maxlength="50" required placeholder="山田太郎">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>
+                メールアドレス
+              </span>
+              <input type="email" name="email" value="" size="25" maxlength="25" placeholder="xxxx@yyyy.com">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>
+                ブログやホームページがあればお知らせください。
+              </span>
+              <input type="url" name="url" value="" size="50" maxlength="50" placeholder="htttps;//www.aaaaa.com/">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>
+                郵便番号
+              </span>
+              <input type="text" name="zip" value="" size="20" maxlength="8" placeholder="999-0099">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>
+                ご住所
+              </span>
+              <input type="text" name="address_1" size="50" maxlength="50" placeholder="都道府県、市町村、番地">
+              <br>
+              <span>
+                建物名と部屋番号
+              </span>
+              <input type="text" name="address_2" size="50" maxlength="50" placeholder="アパート、マンション名等の建物名と部屋番号" style="margin-top: 8px;">
+            </label>
+          </p>
+          <p>
+            <span>
+              性別
+            </span>
+            <label>
+              <input type="radio" name="sex" value="男性"　checked="checked">男性
+            </label>
+            <label>
+              <input type="radio" name="sex" value="女性"　>女性
+            </label>
+          </p>
+          <p>
+            <span>
+              ご年齢
+            </span>
+            <label>
+              <input type="radio" name="age" value="20代"　checked="checked">20代
+            </label>
+            <label>
+              <input type="radio" name="age" value="30代">30代
+            </label>
+            <label>
+              <input type="radio" name="age" value="40代">40代
+            </label>
+            <label>
+              <input type="radio" name="age" value="50代">50代
+            </label>
+            <label>
+              <input type="radio" name="age" value="60代">60代
+            </label>
+            <label>
+              <input type="radio" name="age" value="70代">70代
+            </label>
+          </p>
+          <p>
+            <span>
+              ご希望の施工内容
+            </span>
+            <label>
+              <input type="checkbox" name="plan" value="新築">新築
+            </label>
+            <label>
+              <input type="checkbox" name="plan" value="リフォーム">リフォーム
+            </label>
+            <label>
+              <input type="checkbox" name="plan" value="建て替え">建て替え
+            </label>
+            <label>
+              <input type="checkbox" name="plan" value="その他">その他
+            </label>
+            <br>
+            <label>
+              <span>
+                その他
+              </span>
+              <input type="text" name="plan" value="" size="50" maxlength="50" style="margin-top: 8px;">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>
+                ご職業
+              </span>
+              <select name="shokugyou">
+                <option>選択してください</option>
+                <option value="会社員">会社員</option>
+                <option value="自営業">自営業</option>
+                <option value="学生">学生</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              <span>
+                お問い合わせ内容
+              </span>
+              <textarea name="message" rows="4" cols="60" wrap="hard"></textarea>
+            </label>
+          </p>
+        </form>
+        <p>
+          <input type="submit" name="" value="送信する" form="contact01">
+          <input type="reset" name="" value="リセット" form="contact01">
+        </p>
+      </div>
+    </main>
+    <footer>
+      ©　2016　CAM.inc All rights reserved.
+    </footer>
+  </div>
+</body>
+
+</html>

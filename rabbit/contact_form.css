@@ -1,0 +1,38 @@
+form{
+  width: 650px;
+}
+
+form p{
+  margin: 0;
+  padding: 10px;
+  border-bottom: 2px solid white;
+  font-size: 12px;
+  background: linear-gradient(#FFF,#6F6);
+  -moz-background: linear-gradient(top,#FFF,#6F6);
+  -webkit-background:linear-gradient(top,#FFF,#6F6);
+}
+
+form p span{
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+  margin: 0px;
+}
+
+form p input{
+  padding: 4px;
+  margin: 0;
+  color: #666;
+  border: none;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  background: #FFF;
+  box-shadow: 2px 3px 5px -2px #CCC inset;
+  -webkit-box-shadow: 2px 3px 5px -2px #CCC inset;
+  -moz-box-shadow: 2px 3px 5px -2px #CCC inset;
+}
+
+form p label{
+  padding: 4px;
+}
