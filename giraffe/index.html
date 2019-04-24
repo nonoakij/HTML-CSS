@@ -1,0 +1,50 @@
+﻿
+<!doctype html>
+<html>
+
+<head>
+  <title>BEM勉強します</title>
+  <meta charset="utf-8">
+  <link href="style.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+    </header>
+    <main>
+      <div class="block">
+        <div class="block__element"></div>
+        <div class="block__element block__element--modifier"></div>
+      </div>
+
+      <div class="block block--modifier">
+        <div class="block__element block--modifier__element"></div>
+      </div>
+
+      <div class="article-list">
+        <div class="article-list__article-title">
+          赤くないタイトル
+          <span class="article-list__article-subtitle">サブタイトル</span>
+        </div>
+
+        <div class="article-list__article-title--red">
+          赤いタイトル
+          <span class="article-list__article-subtitle">サブタイトル</span>
+        </div>
+
+        <div class="article-list__article-title">
+          赤くないタイトル
+          <span class="article-list__article-subtitle--green">緑のサブタイトル</span>
+          <div class="article-list__article-link">
+            <a href="#">テキスト</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </div>
+</body>
+
+</html>

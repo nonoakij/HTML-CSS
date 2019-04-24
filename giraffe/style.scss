@@ -1,0 +1,57 @@
+@import "global";
+body {
+    background: #ccc;
+    color: #000;
+    margin: 0;
+}
+
+#container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+header{
+  height:200px;
+  background-color: blue;
+}
+
+
+.article-list {
+  width: 100%;
+
+  %__article-title{
+    font-size: 20px;
+  }
+
+  &__article-title {
+    @extend %__article-title;
+
+    &--red {
+      @extend %__article-title;
+      color: red;
+    }
+  }
+
+  %__article-subtitle{
+    font-size: 20px;
+  }
+
+  &__article-subtitle {
+    @extend %__article-subtitle;
+
+    &--green{
+      @extend %__article-subtitle;
+      color: green;
+    }
+  }
+
+  &__article-link{
+    @extend %link;
+  }
+}
+
+
+footer{
+  height: 100px;
+  background-color: black;
+}
