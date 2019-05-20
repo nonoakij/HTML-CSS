@@ -4,49 +4,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 class PopUp {
   constructor(){
-    this.popup;
-    this.glayBg;
-    this.closeBtn;
+    this.popUp;
     this.header;
-    this.inner;
+    this.shadow;
+    this.closeBtn;
     this.init();
   }
   init(){
-    this.popup = document.querySelector(".PopUp");
-    if(!this.popup) return;
-    //console.log(this.popup);
+    this.popUp = document.querySelector('.PopUp');
+    //console.log(this.popUp.classList);
     this.header = document.getElementsByClassName('Header__menu');
     this.openPopUp(this.header[2]);
-
-    this.glayBg = document.getElementsByClassName('PopUp');
-
-    //console.log(this.glayBg);
-    this.closeBtn = this.popup.getElementsByClassName('PopUp__closeBtn');
+    //console.log(this.header[2]);
+    this.shadow = this.popUp.querySelector('.PopUp__shadow');
+    this.togglePopUp(this.shadow);
+    //console.log(this.shadow);
+    this.closeBtn = this.popUp.querySelector('.PopUp__closeBtn');
+    this.togglePopUp(this.closeBtn);
     //console.log(this.closeBtn);
-    this.closePopUp(this.glayBg[0]);
-    this.closePopUp(this.closeBtn[0]);
-    this.inner = this.popup.getElementsByClassName('PopUp__inner');
-    this.stop(this.inner[0]);
   }
-  closePopUp(elem){
+  togglePopUp(elem){
     if(!elem) return;
-    //console.log(elem);
+    console.log(elem);
     elem.addEventListener('click', () => {
-      //console.log(event.target.tagName );
-      this.glayBg[0].classList.remove('PopUp--show');
-      //toggle っていうのもあるらしいがハブリングのせいで使えない＞＜。。
+      this.popUp.classList.toggle('PopUp--show');
     })
   }
   openPopUp(elem){
     if(!elem) return;
     elem.addEventListener('click', () => {
-      this.glayBg[0].classList.add('PopUp--show');;
-    })
-  }
-  stop(elem) {
-    elem.addEventListener('click', () =>{
-      event.stopPropagation();
-      //非推奨らしい
+      this.popUp.classList.add('PopUp--show');;
     })
   }
 }
