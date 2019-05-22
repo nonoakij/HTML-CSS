@@ -18,40 +18,17 @@ class Hamburger {
     this.hamburgerButton = this.hamburger.querySelector('.Hamburger__button');
 
     this.toggleHamburger(this.hamburgerButton);
-    //this.closeHamburger(this.hamburgerButton);
     this.shadow = this.hamburger.querySelector('.Hamburger__shadow');
-    this.closeHamburger(this.shadow);
+
+    this.shadow.addEventListener('click', () =>{
+      alert("私は影");
+    });
+      this.toggleHamburger(this.shadow);
   }
-  // closeHamburger(elem){
-  //   if(!elem) return;
-  //   elem.addEventListener('click', () => {
-  //     //this.hamburgerButton.classList.remove('Hamburger__button--hide');
-  //     this.shadow.classList.remove('Hamburger__shadow--show');
-  //     this.list.classList.remove('List--show');
-  //   })
-  // }
-  // openHamburger(elem){
-  //   if(!elem) return;
-  //   elem.addEventListener('click', () => {
-  //     //this.hamburgerButton.classList.add('Hamburger__button--hide');
-  //     this.shadow.classList.add('Hamburger__shadow--show');
-  //     this.list.classList.add('List--show');
-  //     Array.from(this.hamburgerIcon).forEach(span => {
-  //       console.log(span);
-  //       span.classList.toggle('open');
-  //     });
-  //   })
-  // }
-  togleHamburger(elem){
+  toggleHamburger(elem){
     if(!elem) return;
     elem.addEventListener('click', () => {
-      this.hamburgerButton.classList.add('Hamburger__button--hide');
-      this.shadow.classList.toggle('Hamburger__shadow--show');
-      this.list.classList.toggle('List--show');
-      Array.from(this.hamburgerIcon).forEach(span => {
-        console.log(span);
-        span.classList.toggle('open');
-      });
-    })
+      this.hamburger.classList.toggle('Hamburger--open');
+    });
   }
 }

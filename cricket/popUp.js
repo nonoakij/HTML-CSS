@@ -25,7 +25,7 @@ class PopUp {
   }
   togglePopUp(elem){
     if(!elem) return;
-    console.log(elem);
+    //console.log(elem);
     elem.addEventListener('click', () => {
       this.popUp.classList.toggle('PopUp--show');
     })
